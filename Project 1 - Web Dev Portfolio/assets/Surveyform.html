@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="Surveyform.css"-->
+    <title>Survey | PRRCFI</title>
+</head>
+<body>
+    <div class="blue">
+        <header>
+            <h1 id="title"><u>PRRCFI Program Interest Survey</u></h1>
+            <p id="description">
+                Complete Program Interest Survey to help us know you better based on your personal
+                profile. This gives us an idea of your motivation to inspire people to take an
+                action for biodiversity conservation and sustainable development through four
+                strategic areas of experiential learning, collaborative research, enabling communities 
+                and nurturing partnerships.
+            </p>
+        </header>
+    </div>
+    <div class="green">
+    <form id="survey-form">    
+        <label id="name-label">Full Name:
+            <input id="name" type="text" placeholder="Enter your Full Name" required>
+        </label><br>
+        <label id="email-label">Email Address:
+            <input id="email" type="email" placeholder="Enter your Email Address" required>
+        </label><br>
+        <label id="number-label">Age:
+            <input id="number" type="number" min="18" max="100" placeholder="Enter your Age" required>
+        </label><br>
+        <label id="gender-label">Gender:
+            <select id="dropdown" name="gender">
+                <option value="">(select one)</option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+            </select>
+        </label><br>
+        <label id="profile-label">Upload a profile picture
+            <input type="file" name="file">
+        </label><br>
+        <hr>
+        <label id="radio-button">What program do you want to participate?<br>
+            <input id="radio-choices" class="options" type="radio" name="program" value="MWC"> Marine and Wildlife Camps<br>
+            <input id="radio-choices" class="options" type="radio" name="program" value="DEEP"> Danjugan Island Environmental Education Program (DEEP)<br>
+            <input id="radio-choices" class="options" type="radio" name="program" value="SWEEP"> Sea Waste Education to Eradicate Plastic (SWEEP)<br>
+            <input id="radio-choices" class="options" type="radio" name="program" value="aweSMseas"> #aweSMseas<br>
+            <input id="radio-choices" class="options" type="radio" name="program" value="usik"> Wala Usik Challenge 2022: #HackThePackaging
+        </label>
+        <label id="checkbox-button">Where do you browse an information about us? Check all that apply.<br>
+            <input id="box-choices" class="options" type="checkbox" name="source" value="website">Website<br>
+            <input id="box-choices" class="options" type="checkbox" name="source" value="socmed">Social Media Pages<br>
+            <input id="box-choices" class="options" type="checkbox" name="source" value="news">News<br>
+            <div id="box-choices">
+                <input class="options" type="checkbox" name="source" value="others">Others, please specify.
+                <input id="Other-textarea" class="options" textarea>
+            </div>
+        </label>
+        <hr>
+        <label>Additional Comments:
+            <textarea placeholder="Do you have more information you want to share with us?" type="text" name="comments" rows="2" cols="3"></textarea>
+        </label>
+        <input id="submit" type="submit">
+    </form>
+    </div>
+</body>
+</html>
+<style>
+body {
+     font-family: 'Franklin Gothic Medium';
+     background: url(https://lh3.googleusercontent.com/60lMUBtB4RCfwTZm1zTCYPqCWxeYXrqNEInUEig6bFEBVfeigwa8YRPvWyeSxadyasWcEl30vGWk1izVVURIcDGCJNP7krjSVPLcR73NySUx-ar_eJ-6rghnIkZuNeF-B4zn5-SMCg=w2400);
+     background-size: 50%;
+     background-repeat: repeat;
+}
+@media (max-width: 800px) {
+    body {
+    background-size: 100%;
+    background-repeat: repeat-y;
+    object-fit: cover;
+    }
+}
+@media (max-width: 1200px) {
+    body {
+    background-size: 100%;
+    background-repeat: repeat-y;
+    }
+}
+.blue {
+    background-color: #2a9df4;
+}
+header {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2px;
+    padding-bottom: 10px;
+    color: #ffffff;
+}
+hr {
+    height: 2px;
+    background-color: rgb(60, 141, 196);
+    border-color: rgb(5, 17, 185);
+  }
+.green {
+    background-color: aquamarine;
+}
+form {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+    font-size: 16px;
+}
+div {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    font-size: 30px;
+    text-align: center;
+    font-family: monospace;
+}
+p {
+    text-align: justify;
+    font-size: 16px;
+}
+label {
+    display: block;
+}
+input, textarea, select {
+    width: 100%;
+}
+input, textarea {
+    background-color: aliceblue;
+    border: 1px solid aliceblue;
+    color: black;
+}
+.options {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+#radio-button {
+    padding: 20px 0px 10px 0px; 
+}
+#checkbox-button {
+    padding: 10px 0px 20px 0px; 
+}
+#Other-textarea {
+    width: 60%;
+    align-self: flex-end;
+}
+#submit {
+    height: 50px;
+    width: 300px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    align-self: center;
+    background-color: rgb(46, 114, 91);
+}
+#radio-choices {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+#box-choices {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+</style>
